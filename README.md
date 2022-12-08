@@ -10,8 +10,10 @@ ROS 2 and Turtleism must be installed beforehand.
  ros2 run turtlesim turtle_teleop_key
 
 2. Clone the repository to your ROS 2 WS folder
-3. Run the following command in the src forlder
+3. Run the following commands in the ros2 WS folder
+
 colcon build --packages-select turtlesim_cleaner
+. install/setup.bash
 4. To go to goal straightly use this command. 
 
 ros2 run turtlesim_cleaner gotogoal_straight 1 1 1.57 0.1 0.01
@@ -22,4 +24,5 @@ fourth and fifth parameters are distance tolerance and angular torlerance respec
 
 
 5. To go to goal in cicular motion, run the following command
+
 ros2 run turtlesim_cleaner gotogoal 1 1 0.1
